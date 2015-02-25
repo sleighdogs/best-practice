@@ -136,6 +136,7 @@ metadata and configuration for staging/preview server. The difference between
 `staging` branch and all the other branches is that it should only be branched
 and never merged back into any of the above mentioned branches. It sole purpose
 is just preview. The `staging` branch may be branched of `develop`, `release` or
-even `feature` branches. (It depends on how you agreed with your client
-- if he wants to preview only the release cycle features, stable features or
-even the work in progress features.)
+even `feature` branches. (It depends on how you agreed with your client - if he 
+wants to preview only the release cycle features, stable features or even the
+work in progress features.)
+

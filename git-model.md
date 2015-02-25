@@ -10,7 +10,7 @@ The following picture illustartes the big picture of the whole branching model
 used for big development projects. You can see different branches living side by
 side more or less over the lifetime of the whole project.
 
-![Git structure](assets/git-structure/git-structure.png)
+![Git structure](assets/git-model/git-model.png)
 
 Let's dive into the description of all the different branches so we will know
 what they are used for.

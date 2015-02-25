@@ -63,16 +63,15 @@ We have already spoken about one way of merging `develop` into `master` branch
 which may be the case of some middle sized project, but in bigger projects we
 usually use the supporting `release` branch. The benefit of such branch is that
 it allows for preparation of production realease like last-minute bugfixing,
-metadata preparation, configuration modification, while the `develop` branch is 
-ready to receive new modifications for the next upcoming realease.
+metadata preparation while the `develop` branch is ready to receive new 
+modifications for the next upcoming realease.
 
 The `release` branch must be branched of `develop` branch at a time, when all
 the features targeted for next release are developed and merged into `develop`
 branch. The `release` branch must merge back to `master` and `develop` branches.
 (The additional merge back to `develop` is due to the possible cahnges,
-bugfixes, metadata and configuration modifications in `release` branch). It is 
-also considered best-practice to create new tag on `master` branch once the
-`release` branch is merged into it.
+bugfixes, metadata in `release` branch). It is also considered best-practice to
+create new tag on `master` branch once the `release` branch is merged into it.
 
 To create new `release` branch:
 ```
@@ -92,7 +91,7 @@ $ git push origin master
 $ git chcekout develop
 $ git pull
 $ git merge --no-ff release-1.1
-$ git branch -d release-1.1
 $ git push origin develop
+$ git branch -d release-1.1
 ```
 

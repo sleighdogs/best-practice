@@ -8,3 +8,5 @@ repository may be updated on daily basis, at least from the bginning.
 ## GIT
 [Git model for bigger development projects](git-model.md)
 
+## CSS
+[CSS guidelines and conventions](css-guide.md)

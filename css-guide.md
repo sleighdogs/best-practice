@@ -89,5 +89,38 @@ subelements inside blocks. The reason is simple, performance. Every level of
 CSS selectors nesting adds unnecessary performance issues to the browser. We 
 are not gonna explain how it works, you should just trust us.
 
+Okey! Let's get to the modifiers. As we described it, modifier stands for 
+different presentation of the same content. The different presentation could 
+have the meaning of just an inverted colours for the element, but also 
+completely different structure. A nice example would be having the same menu in 
+the `header` and also `footer` HTML tags, but the structure will different. One 
+will use 'ul' and 'li', other one can use 'nav pills' or whatever else.
 
+Modifier can be used on blocks or elements, but it is better suited for the 
+block use.
 
+The `modifier name` appears at the end of the `block name` or `element name`. 
+The `modifier name` is concatenated with the rest of the name with double dash 
+symbol `--`. Again, the choice has been made due to the different naming 
+conventions.
+
+Example of modifiers used on `menu` block:
+```
+menu
+menu--header
+menu--side-bar
+menu--footer
+...
+```
+
+Another example used on `menu__item` element:
+```
+menu__item
+menu__item--inverted
+menu__item--featured
+menu__item--sticky
+...
+```
+
+The possibilities here are endless, but we strongly encourage use of clever 
+mind and not to overdo it.
